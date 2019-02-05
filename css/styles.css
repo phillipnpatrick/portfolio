@@ -1,0 +1,298 @@
+* { box-sizing: border-box; }
+
+/*** body ***/
+body{
+  background-color: #fffeea;
+  color: #34495e;
+  position: relative;
+  font-family: 'Life Savers', cursive;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*** navigation bar ***/
+.navbar-brand {
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+}
+
+a.navbar-brand {
+  color: steelblue !important;
+}
+
+.nav-link {
+    font-family: 'Special Elite', cursive;
+    font-weight: normal;
+}
+
+.social-icon {
+  padding-right: 20px;
+}
+
+/*** Carousel ***/
+.carousel {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#carouselExampleIndicators {
+  padding-top: 50px;
+}
+
+.carousel-img{
+    display: block;       /* centering */
+    margin-left: auto;    /* centering */
+    margin-right: auto;   /* centering */
+    padding-bottom: 20px;
+    max-width: 750px;
+    max-height: 450px;
+}
+
+.carousel-indicators {
+    top: 10%;
+}
+
+.carousel-indicators li {
+  background-color: #999; /* change color */
+  background-color: rgba(70,70,70,.25);
+  width: 10px;            /* change to circles */
+  height: 10px;           /* change to circles */
+  border-radius: 100%;    /* change to circles */
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.carousel-caption{
+    position: static;
+    color: steelblue;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+/*** All sections ***/
+.spacer {
+  padding-top: 30px;
+}
+
+.new-section {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 85px;
+}
+
+.new-section-header h1{
+  /* font-family: 'Amatic SC', cursive; */
+  text-align: center;
+  font-weight: 600;
+}
+
+/*** Work ***/
+.row-work {
+  margin-bottom: 2em;
+}
+
+.work-img {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  position: relative;
+}
+
+.work-info {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
+  display: none;
+}
+
+.work-proj-title {
+  color: red;
+  font-weight: bolder;
+}
+
+/*** About ***/
+
+.about-container p, li {
+  font-weight: 600;
+  font-size: 1.5em
+}
+
+.about-image img{
+  width: 100%;
+}
+
+.about-intro p {
+  font-size: 2em;
+  font-weight: 600;
+  -webkit-margin-before: 0;
+}
+
+#skill-list {
+  margin-left: 5em;
+}
+
+.about-skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.languages {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icon-language {
+  width: 80px;
+  height: 100px;
+  padding-right: 20px;
+}
+
+.about-learn-more {
+  clear: both;
+}
+
+.nothing {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .modal-button button {
+    float: right;
+  }
+}
+
+#modal-embed {
+  height: 700px;
+  width: 100%;
+}
+
+.about-story{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  clear: both;
+  background-color: #d3e3f8;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.about-story a:visited {
+  color: orange;
+}
+
+/*** FAQ ***/
+.card-header { background-color: #1C61BA}
+.card-header button { color: #FFEB0D }
+.card-header button:hover { color: #FF0000 }
+.card-body { background-color: #d3e3f8}
+
+/**** Contact ***/
+.section-contact {
+  background-image: url("./../img/contact.jpg");
+  background-attachment: fixed; /* Reveals image as scrolling */
+  background-size: cover;
+  color: white;
+  height: 600px;
+  padding-left: 10px;
+}
+
+.section-contact a {
+  color: white;
+  transition: color 600ms;
+}
+
+.section-contact a:hover {
+  color: #ff0;
+  text-decoration: none;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contact-info {
+  font-family: Helvetica;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.contact-icon {
+  margin-right: 5px;
+}
+
+.contact-form {
+  margin-top: 10px;
+}
+
+/** Override parent CSS styles ***/
+.form-control {
+  width: 80%
+}
+
+.label {
+  color: white;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+  font-family: Helvetica;
+  font-size: 16pt;
+}
+
+/*** Video***/
+#video {
+  text-align: center;
+}
+
+/*** Footer ***/
+.my-footer {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.copyright {
+  float: right;
+  font-weight: bold;
+}
