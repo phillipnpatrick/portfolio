@@ -71,10 +71,28 @@ a.navbar-brand {
 }
 
 .spacer {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 /*** Work Carousel ***/
+.work-links {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.work-link {
+  display: none;
+}
+
+.work-link-img {
+  width: 60px;
+  height: 60px;
+}
+
+.work-github {
+  padding-left: 20px;
+}
+
 #workCarousel {
   margin-bottom: 500px;
 }
@@ -93,6 +111,15 @@ a.navbar-brand {
 
 .carousel-indicators li:not(:last-child) {
   margin-right: 20px;
+}
+
+.work-carousel-img{
+    display: block;       /* centering */
+    margin-left: auto;    /* centering */
+    margin-right: auto;   /* centering */
+    padding-bottom: 20px;
+    max-width: 550px;
+    max-height: 250px;
 }
 
 /*** Carousel ***/
