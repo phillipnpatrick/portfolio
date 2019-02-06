@@ -36,6 +36,65 @@ a.navbar-brand {
   padding-right: 20px;
 }
 
+/*** SideBar ***/
+.sidebar {
+  width: 115px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 10px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidebar-icon-language {
+  width: 80px;
+  height: 80px;
+  padding-right: 20px;
+}
+
+.spacer {
+  padding-top: 100px;
+}
+
+/*** Work Carousel ***/
+#workCarousel {
+  margin-bottom: 500px;
+}
+
+.work-slider .carousel-indicators {
+  top: -30px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.carousel-indicators li:not(:last-child) {
+  margin-right: 20px;
+}
+
 /*** Carousel ***/
 .carousel {
   margin: 0 auto;
@@ -101,10 +160,6 @@ a.navbar-brand {
 }
 
 /*** All sections ***/
-.spacer {
-  padding-top: 30px;
-}
-
 .new-section {
   margin: 0 auto;
   width: 80%;
