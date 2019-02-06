@@ -75,6 +75,12 @@ a.navbar-brand {
 }
 
 /*** Work Carousel ***/
+.projects {
+  text-align: center;
+  color: steelblue;
+  margin-bottom: 20px;  
+}
+
 .work-links {
   text-align: center;
   padding-bottom: 30px;
@@ -94,7 +100,7 @@ a.navbar-brand {
 }
 
 #workCarousel {
-  margin-bottom: 500px;
+  /* margin-bottom: 500px; */
 }
 
 .work-slider .carousel-indicators {
@@ -190,13 +196,12 @@ a.navbar-brand {
 .new-section {
   margin: 0 auto;
   width: 80%;
-  padding-top: 85px;
 }
 
 .new-section-header h1{
-  /* font-family: 'Amatic SC', cursive; */
   text-align: center;
   font-weight: 600;
+  color: steelblue;
 }
 
 /*** Work ***/
@@ -248,9 +253,19 @@ a.navbar-brand {
   margin-left: 5em;
 }
 
-.about-skills h3 {
+.about-skills {
+  margin-top: 30px;
+}
+
+.skills-hard {
+  text-transform: uppercase;
+  color: red;
+}
+
+.skills-technology {
   text-align: center;
   text-transform: uppercase;
+  color: red;
 }
 
 .languages {
