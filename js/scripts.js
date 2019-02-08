@@ -24,24 +24,20 @@ $(document).ready(function(){
 });
 
 function updateNavItems(){
-  var pageURL = $(location). attr("href");
-
-  // console.log("pageURL = " + pageURL);
-
   var html = "";
-  html += insertNavItem(pageURL, "home.html", "Home");
-  html += insertNavItem(pageURL, "professional.html", "Professional");
-  html += insertNavItem(pageURL, "personal.html", "Hobbies");
-  html += insertNavItem(pageURL, "faq.html", "FAQ");
-  html += insertNavItem(pageURL, "contact.html", "Contact");
+  html += insertNavItem("home.html", "Home", "active");
+  html += insertNavItem("professional.html", "Professional", "");
+  html += insertNavItem("personal.html", "Hobbies", "");
+  html += insertNavItem("faq.html", "FAQ", "");
+  html += insertNavItem("contact.html", "Contact", "");
 
-  // console.log("updateNavItems.html = " + html);
+  console.log("updateNavItems.html = " + html);
 
   $("#navLinks").append(html);
 }
 
-function insertNavItem(pageURL, href, name){
-  var html = "<li class='nav-item'>";
+function insertNavItem(href, name, active){
+  var html = "<li class='nav-item " + active + "'>";
   html += "<a class='nav-link' href='" + href + "'>" + name + "</a>";
   html += "</li>";
 
@@ -94,7 +90,6 @@ function sendMessageButton(usrName, usrEmail, usrMsg){
 }
 
 function contactForm(){
-
   $("#name").on('keyup', function(){
     sendMessageButton($('#name').val(), $('#email').val(), $('#message').val());
 
