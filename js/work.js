@@ -2,7 +2,7 @@ var works = [
   {
     title: "Calculator",
     pic: "./img/project-calculator.jpg",
-    url: "https://frosty-banach-905bee.netlify.com/",
+    url: "https://pnpcalculator.herokuapp.com/",
     description: "Calculator with a JavaScript backend that responds to the number pad.",
     technology: ["bootstrap", "css3", "heroku", "html5", "javascript", "jquery"],
     github: "https://github.com/phillipnpatrick/calculator"

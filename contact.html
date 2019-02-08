@@ -51,21 +51,6 @@
               </li>
             </ul>
             <ul id="navLinks" class="nav navbar-nav ml-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="professional.html">Professional</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="personal.html">Hobbies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
             </ul>
           </div>
       </nav>
@@ -98,24 +83,13 @@
           </div>
         </div>
 
-        <div id="contactForm" class="col-sm-12 col-md-7">
-          <form class="contact-form">
-            <h2>Contact Me:</h2>
-            <div class="form-group">
-              <label for="name" class="label">Name</label><span class="required"> *</span>
-              <input type="text" id="name" class="form-control" placeholder="Enter your name" required minlength="10">
-              <p id="msgName"></p>
-            </div>
-            <div class="form-group">
-              <label for="email" class="label">Email address</label><span class="required"> *</span>
-              <input type="email" id="email" class="form-control" placeholder="Enter your email" required minlength="10">
-              <p id="msgEmail"></p>
-            </div>
-            <label for="message" class="label">Message</label><span class="required"> *</span>
-            <textarea id="message" style="resize:none" cols="40" rows="5" class="form-control message-box"  placeholder="Enter your message here..." required minlength="20"></textarea>
-            <p id="msgBody"></p>
-            <p id="msgCharCount"></p>
-            <button id="submitMessage" type="submit" class="btn btn-primary contact-form">Submit</button>
+        <div id="contactForm" class="contact-form col-sm-12 col-md-7">
+          <h2>Contact Me:</h2>
+          <form method="POST" action="https://formspree.io/phillip.n.patrick@gmail.com">
+            <input type="name" name="name" placeholder="Your name" class="form-control" id="name">
+            <input type="email" name="email" placeholder="Your email" class="form-control" id="email">
+            <textarea name="message" placeholder="Your Message" style="resize:none" cols="40" rows="5" class="form-control message-box" id="message"></textarea>
+            <button type="submit" class="btn btn-primary contact-form" id="submitMessage" disabled>Send Message</button>
           </form>
         </div>
       </div>

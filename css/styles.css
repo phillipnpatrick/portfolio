@@ -366,7 +366,8 @@ a.navbar-brand {
 
 /** Override parent CSS styles ***/
 .form-control {
-  width: 80%
+  width: 80%;
+  margin-bottom: 15px;
 }
 
 .label {
