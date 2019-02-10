@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   console.log("ready");
-  
+
   updateNavItems();
 
   updateActivePageInHeader();
@@ -11,8 +11,6 @@ $(document).ready(function(){
   tooltips();
 
   contactForm();
-
-  updateWorkSection();
 
   populateSidebar();
 
@@ -166,34 +164,6 @@ function tooltips(){
   $(function () {
     $('#suffolk').tooltip();
     $('[data-toggle="tooltip"]').tooltip();
-  });
-}
-
-function updateWorkSection(){
-  // work section
-  // work section - add works
-  for (var i = 0; i < works.length; ++i){
-    $("#workRow").append(
-      "<div class='col-sm-3 col-md-3'>" +
-        "<a href='" + works[i].url +"' class='work-img' target='_blank'>" +
-          "<img class='img-fluid' src='" + works[i].pic + "'>" +
-          "<span class='work-info'><p class='work-proj-title'>Title: " + works[i].title +"</p></span>" +
-        "</a>" +
-        "</div>");
-
-    var images = $("#work img");
-    if(i%2 === 0){
-      $(images[i]).css("border", "2px solid DodgerBlue");
-    } else {
-      $(images[i]).css("border", "2px solid salmon");
-    };
-  }
-
-  // work section - event listeners
-  $('.work-img').mouseenter( function(){
-    $('.work-info', this).show();
-  }).mouseleave( function(){
-    $('.work-info', this).hide();
   });
 }
 

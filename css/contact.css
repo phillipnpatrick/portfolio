@@ -1,0 +1,37 @@
+.section-contact {
+  background-image: url("./../img/contact.jpg");
+  background-attachment: fixed; /* Reveals image as scrolling */
+  background-size: cover;
+  color: white;
+  height: 600px;
+  padding-left: 10px;
+}
+
+.section-contact a {
+  color: white;
+  transition: color 600ms;
+}
+
+.section-contact a:hover {
+  color: #ff0;
+  text-decoration: none;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contact-info {
+  font-family: Helvetica;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.contact-icon {
+  margin-right: 5px;
+}
+
+.contact-form {
+  margin-top: 10px;
+}

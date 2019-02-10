@@ -1,0 +1,4 @@
+.card-header { background-color: #1C61BA}
+.card-header button { color: #FFEB0D }
+.card-header button:hover { color: #FF0000 }
+.card-body { background-color: #d3e3f8}

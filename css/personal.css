@@ -1,0 +1,29 @@
+.about-story{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  clear: both;
+  background-color: #d3e3f8;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.about-story a:visited {
+  color: orange;
+}
+
+.about-story-hdr {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-image img{
+  width: 100%;
+}
+
+.about-intro p {
+  font-size: 2em;
+  font-weight: 600;
+  -webkit-margin-before: 0;
+}
