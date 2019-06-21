@@ -103,6 +103,10 @@ a.navbar-brand {
   /* margin-bottom: 500px; */
 }
 
+.work-previous, .work-next {
+    margin-top: -360px;
+}
+
 .work-slider .carousel-indicators {
   top: -30px;
   padding-left:15px;
@@ -131,6 +135,7 @@ a.navbar-brand {
 .carousel {
   margin: 0 auto;
   width: 80%;
+  height: 600px;
 }
 
 #carouselExampleIndicators {
