@@ -23,6 +23,11 @@ $(document).ready(function(){
   updateFooter();
 });
 
+$(window).resize(function(){
+  console.log("resize");
+  addWorkArrow();
+});
+
 function updateNavItems(){
   var html = "";
   html += insertNavItem("home.html", "Home", "active");
@@ -31,7 +36,7 @@ function updateNavItems(){
   html += insertNavItem("faq.html", "FAQ", "");
   html += insertNavItem("contact.html", "Contact", "");
 
-  console.log("updateNavItems.html = " + html);
+  // console.log("updateNavItems.html = " + html);
 
   $("#navLinks").append(html);
 }
@@ -179,6 +184,7 @@ function validateText(txtElementID, validationElementID){
 }
 
 function workCarousel() {
+  console.log("workCarousel");
   for (var i = 0; i < works.length; i++){
       addWorkLinks(i, works[i], "carouselItem" + i);
 
@@ -186,6 +192,7 @@ function workCarousel() {
 
       addCarouselItem(i, works[i]);
   }
+  addWorkArrow();
 }
 
 function addWorkLinks(index, work, id){
@@ -209,6 +216,18 @@ function addWorkLinks(index, work, id){
   }
 
   $("#workLinks").append(div);
+}
+
+function addWorkArrow() {
+  console.log("addWorkArrow");
+  $("#work-arrow").remove();
+  let top = $("#carouselItem0").position().top - 23;
+  let center = $(window).width() / 2;
+  let left = center - 210;
+  let style = "style='top:" + top + "px; left: " + left + "px'";
+  console.log("top => " + top + "; center => " + center + "; left => " + left + "; style => " + style);
+  let arrow = "<div id='work-arrow' class='arrow arrow-rotate' " + style + "><p class='arrow-text'>Click me!</p></div>";
+  $("#workLinks").append(arrow);
 }
 
 function addIndicatorToCarousel(index){

@@ -74,6 +74,57 @@ a.navbar-brand {
   padding-top: 80px;
 }
 
+/*** Arrows ***/
+/* https://medialoot.com/blog/how-to-add-hand-drawn-vector-arrows-to-your-website/ */
+.arrow-box {
+	background: #f6f6f6;
+	font: bold 2em/2.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 9em;
+	border-radius: 30px;
+	text-align: center;
+	vertical-align: middle;
+	width: 400px;
+	height: 300px;
+	margin: 50px auto;
+}
+
+.arrow-target {
+	display: block;
+	position: relative;
+}
+
+/* You can find the width and height values of any arrow by opening the .svg file in a code editor and looking at the viewbox values (in order the values are X, Y, W, H) */
+.arrow {
+	position: absolute;
+	background: url(../arrows/arrow-1.svg) no-repeat;
+	width: 135px;
+	height: 86px;
+  /* background-color: green;
+  -webkit-mask:  url(../arrows/arrow-1.svg) no-repeat 50% 50%;
+  mask: url(../arrows/arrow-1.svg) no-repeat 50% 50%; */
+}
+
+
+.arrow-text {
+  font-weight: bolder;
+  transform: rotate(-25deg);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: green;
+  z-index: 9;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow-rotate {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /*** Work Carousel ***/
 .page-header {
   text-align: center;
