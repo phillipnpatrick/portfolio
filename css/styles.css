@@ -99,6 +99,7 @@ a.navbar-brand {
 	background: url(../arrows/arrow-1.svg) no-repeat;
 	width: 135px;
 	height: 86px;
+  /* see arrow-1.svg to change color of arrow */
   /* background-color: green;
   -webkit-mask:  url(../arrows/arrow-1.svg) no-repeat 50% 50%;
   mask: url(../arrows/arrow-1.svg) no-repeat 50% 50%; */
